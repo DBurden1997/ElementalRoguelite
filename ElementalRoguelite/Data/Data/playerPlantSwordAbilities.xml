@@ -1,0 +1,19 @@
+<?xml version = ‘1.0’ standalone = ‘yes’ ?>
+<playerPlantSwordAbilities>
+    <swordSlash id = 'swordSlash' name = 'Sword Slash' >
+        <Cost type = 'Stamina' amount = '5' >
+        <Target type = 'circularSector' center = 'anchor' radius = '28' angle = '100' >
+        <ActionList>
+            <Action type = 'getTargetArea' value = 'directionFromSelf' >
+                <Action type = 'playAnimation' value = 'StartUpAnim' >
+                    <Action type = 'getTargetEntities' type = 'enemy' >
+                        <Action type = 'playAnimation' value = 'AttackAnim' >
+                            <Action type = 'playAnimation' value = 'FallThrough' >
+                        </Action>
+                        <Action type = 'applyTargetEffects' >
+                    </Action>
+                </Action>
+            </Action>
+        </ActionList>
+    </swordSlash>
+</playerPlantSwordAbilities>

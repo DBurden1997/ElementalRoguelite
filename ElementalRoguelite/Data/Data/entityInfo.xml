@@ -1,0 +1,21 @@
+<?xml version = '1.0' standalone = 'yes' ?>
+<entityInfo>
+    <playerEntity state = 'idle'>
+        <positionComponent xPos = '250' yPos = '260' anchorX = '16' anchorY = '16' />
+        <graphicComponent spriteSheet = 'plantPlayerSword' x = '0' y = '0' w = '32' h = '32' />
+        <physicsComponent/>
+        <directionComponent/>
+        <controlComponent/>
+        <collisionComponent type = 'player' colWidth = '32' colHeight = '32' />
+        <animationComponent animationSet = 'playerPlantSwordAnimations' animationState = 'idleDown' />
+        <healthComponent max = '5' />
+    </playerEntity>
+    <enemyEntity state = 'none' >
+        <positionComponent xPos = '200' yPos = '130' anchorX = '16' anchorY = '16' />
+        <graphicComponent spriteSheet = 'CharacterSpriteSheet' x = '32' y = '0' w = '32' h = '32' />
+        <physicsComponent/>
+        <collisionComponent type = 'enemy' colWidth = '32' colHeight = '32' />
+        <healthComponent max = '3' />
+        <contactDamageComponent damageAmount = '1' damageEnemy = '1' damageAlly = '0' />
+    </enemyEntity>
+</entityInfo>

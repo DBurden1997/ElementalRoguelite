@@ -1,0 +1,47 @@
+<?xml version = ‘1.0’ standalone = ‘yes’ ?>
+<swordSlashReticle>
+    <animation id = 'left' edge = 'none' replay = '1' numFrames = '1' >
+        <validEdges>
+            <edge> right </edge>
+            <edge> up </edge>
+            <edge> down </edge>
+        </validEdges>
+        <frame length = '6' >
+            <clip x = '0' y = '0' w = '16' h = '48'>
+            <anchor x = '10' y = '23' >
+        </frame>
+    </animation>
+    <animation id = 'right' edge = 'none' replay = '1' numFrames = '1' >
+        <validEdges>
+            <edge> right </edge>
+            <edge> up </edge>
+            <edge> down </edge>
+        </validEdges>
+        <frame length = '6' >
+            <clip x = '16' y = '0' w = '16' h = '48'>
+            <anchor x = '6' y = '23' >
+        </frame>
+    </animation>
+    <animation id = 'up' edge = 'none' replay = '1' numFrames = '1' >
+        <validEdges>
+            <edge> right </edge>
+            <edge> up </edge>
+            <edge> down </edge>
+        </validEdges>
+        <frame length = '6' >
+            <clip x = '32' y = '0' w = '48' h = '16'>
+            <anchor x = '24' y = '11' >
+        </frame>
+    </animation>
+    <animation id = 'down' edge = 'none' replay = '1' numFrames = '1' >
+        <validEdges>
+            <edge> right </edge>
+            <edge> up </edge>
+            <edge> down </edge>
+        </validEdges>
+        <frame length = '6' >
+            <clip x = '32' y = '16' w = '48' h = '16'>
+            <anchor x = '24' y = '6' >
+        </frame>
+    </animation>
+</swordSlashReticle>

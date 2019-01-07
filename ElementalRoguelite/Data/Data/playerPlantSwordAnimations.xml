@@ -1,0 +1,623 @@
+<?xml version = ‘1.0’ standalone = ‘yes’ ?>
+<playerPlantSwordAnimations>
+    <!-- Idle Animations -->
+    <!-- Idle Animation Facing Down -->
+    <animation id = 'idle' edge = 'none' replay = '1' numFrames ='7' constLength = '1' constSize = '1' constAnchor = '1' constCollision = '1' >
+        <validEdges>
+            <edge>idleBlinkDown</edge>
+            <edge>walkingDown</edge>
+            <edge>walkingUp</edge>
+            <edge>walkingLeft</edge>
+            <edge>walkingRight</edge>
+            <edge>hitStunDown</edge>
+            <edge>hitStunUp</edge>
+            <edge>hitStunLeft</edge>
+            <edge>hitStunRight</edge>
+        </validEdges>
+        < length val = '8' />
+        < frame x = '0'y = '0' row = '1' fpr = '7' w = '32' h = '32' />
+        < anchor x = '16' y = '16' />
+        <collision x = '7' y = '7' w = '18' h = '23' />
+    </animation>
+    <!-- Blinking Idle Animation Facing Down -->
+    <animation id = 'idleBlinkDown' edge = 'idle' replay = '1' numFrames ='7' >
+        <validEdges>
+            <edge>idleDown</edge>
+            <edge>walkingDown</edge>
+            <edge>walkingUp</edge>
+            <edge>walkingLeft</edge>
+            <edge>walkingRight</edge>
+            <edge>hitStunDown</edge>
+            <edge>hitStunUp</edge>
+            <edge>hitStunLeft</edge>
+            <edge>hitStunRight</edge>
+        </validEdges>
+        <frame length = '8' >
+            <clip x = '224' y = '0' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '8' >
+            <clip x = '256' y = '0' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '8' >
+            <clip x = '288' y = '0' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '8' >
+            <clip x = '320' y = '0' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '8' >
+            <clip x = '352' y = '0' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '8' >
+            <clip x = '384' y = '0' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '8' >
+            <clip x = '416' y = '0' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+    </animation>
+    <!-- Idle Animation Facing Left -->
+    <animation id = 'idleLeft' edge = 'none' replay = '1' numFrames ='1' >
+        <validEdges>
+            <edge>walkingDown</edge>
+            <edge>walkingUp</edge>
+            <edge>walkingLeft</edge>
+            <edge>walkingRight</edge>
+            <edge>hitStunDown</edge>
+            <edge>hitStunUp</edge>
+            <edge>hitStunLeft</edge>
+            <edge>hitStunRight</edge>
+        </validEdges>
+        <frame length = '6' >
+            <clip x = '0' y = '32' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '8' y = '7' w = '18' h = '23' />
+        </frame>
+    </animation>
+    <!-- Idle Animation Facing Right -->
+    <animation id = 'idleRight' edge = 'none' replay = '1' numFrames ='1' >
+        <validEdges>
+            <edge>walkingDown</edge>
+            <edge>walkingUp</edge>
+            <edge>walkingLeft</edge>
+            <edge>walkingRight</edge>
+            <edge>hitStunDown</edge>
+            <edge>hitStunUp</edge>
+            <edge>hitStunLeft</edge>
+            <edge>hitStunRight</edge>
+        </validEdges>
+        <frame length = '6' >
+            <clip x = '0' y = '64' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '6' y = '7' w = '18' h = '23' />1
+        </frame>
+    </animation>
+    <!-- Idle Animation Facing Up -->
+    <animation id = 'idleUp' edge = 'none' replay = '1' numFrames ='1' >
+        <validEdges>
+            <edge>walkingDown</edge>
+            <edge>walkingUp</edge>
+            <edge>walkingLeft</edge>
+            <edge>walkingRight</edge>
+            <edge>hitStunDown</edge>
+            <edge>hitStunUp</edge>
+            <edge>hitStunLeft</edge>
+            <edge>hitStunRight</edge>
+        </validEdges>
+        <frame length = '6' >
+            <clip x = '0' y = '96' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+    </animation>
+    
+    <!-- Walking Animations -->
+    <!-- Walking Animation Facing Down -->
+    <animation id = 'walkingDown' edge = 'walkingBlink' replay = '1' numFrames = '8' >
+        <validEdges>
+            <edge>walkingBlinkDown</edge>
+            <edge>idleDown</edge>
+            <edge>walkingUp</edge>
+            <edge>walkingLeft</edge>
+            <edge>walkingRight</edge>
+            <edge>hitStunDown</edge>
+            <edge>hitStunUp</edge>
+            <edge>hitStunLeft</edge>
+            <edge>hitStunRight</edge>
+        </validEdges>
+        <frame length = '6'>
+            <clip x = '0' y = '128' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '32' y = '128' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '64' y = '128' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '96' y = '128' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '128' y = '128' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '160' y = '128' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '192' y = '128' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '224' y = '128' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+    </animation>
+    <!-- Blinking Walking Animation Facing Down -->
+    <animation id = 'walkingBlinkDown' edge = 'walking' replay = '1' numFrames = '8' >
+        <validEdges>
+            <edge>walkingDown</edge>
+            <edge>idleDown</edge>
+            <edge>walkingUp</edge>
+            <edge>walkingLeft</edge>
+            <edge>walkingRight</edge>
+            <edge>hitStunDown</edge>
+            <edge>hitStunUp</edge>
+            <edge>hitStunLeft</edge>
+            <edge>hitStunRight</edge>
+        </validEdges>
+        <frame length = '6'>
+            <clip x = '256' y = '128' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '288' y = '128' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '320' y = '128' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '352' y = '128' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '384' y = '128' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '416' y = '128' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '448' y = '128' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '480' y = '128' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+    </animation>
+    <!-- Walking Animation Facing Left -->
+    <animation id = 'walkingLeft' edge = 'walkingBlink' replay = '1' numFrames = '8' >
+        <validEdges>
+            <edge>walkingBlinkLeft</edge>
+            <edge>idleLeft</edge>
+            <edge>walkingUp</edge>
+            <edge>walkingDown</edge>
+            <edge>walkingRight</edge>
+            <edge>hitStunDown</edge>
+            <edge>hitStunUp</edge>
+            <edge>hitStunLeft</edge>
+            <edge>hitStunRight</edge>
+        </validEdges>
+        <frame length = '6'>
+            <clip x = '0' y = '160' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '32' y = '160' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '64' y = '160' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '96' y = '160' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '128' y = '160' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '160' y = '160' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '192' y = '160' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '224' y = '160' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+    </animation>
+    <!-- Blinking Walking Animation Facing Left -->
+    <animation id = 'walkingBlinkLeft' edge = 'walking' replay = '1' numFrames = '8' >
+        <validEdges>
+            <edge>walkingLeft</edge>
+            <edge>idleLeft</edge>
+            <edge>walkingUp</edge>
+            <edge>walkingDown</edge>
+            <edge>walkingRight</edge>
+            <edge>hitStunDown</edge>
+            <edge>hitStunUp</edge>
+            <edge>hitStunLeft</edge>
+            <edge>hitStunRight</edge>
+        </validEdges>
+        <frame length = '6'>
+            <clip x = '256' y = '160' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '288' y = '160' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '320' y = '160' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '352' y = '160' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '384' y = '160' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '416' y = '160' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '448' y = '160' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '480' y = '160' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+    </animation>
+    <!-- Walking Animation Facing Right -->
+    <animation id = 'walkingRight' edge = 'walkingBlink' replay = '1' numFrames = '8' >
+        <validEdges>
+            <edge>walkingBlinkRight</edge>
+            <edge>idleRight</edge>
+            <edge>walkingUp</edge>
+            <edge>walkingDown</edge>
+            <edge>walkingLeft</edge>
+            <edge>hitStunDown</edge>
+            <edge>hitStunUp</edge>
+            <edge>hitStunLeft</edge>
+            <edge>hitStunRight</edge>
+        </validEdges>
+        <frame length = '6'>
+            <clip x = '0' y = '192' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '32' y = '192' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '64' y = '192' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '96' y = '192' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '128' y = '192' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '160' y = '192' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '192' y = '192' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '224' y = '192' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+    </animation>
+    <!-- Blinking Walking Animation Facing Right -->
+    <animation id = 'walkingBlinkRight' edge = 'walking' replay = '1' numFrames = '8' >
+        <validEdges>
+            <edge>walkingRight</edge>
+            <edge>idleRight</edge>
+            <edge>walkingUp</edge>
+            <edge>walkingDown</edge>
+            <edge>walkingLeft</edge>
+            <edge>hitStunDown</edge>
+            <edge>hitStunUp</edge>
+            <edge>hitStunLeft</edge>
+            <edge>hitStunRight</edge>
+        </validEdges>
+        <frame length = '6'>
+            <clip x = '256' y = '192' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '288' y = '192' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '320' y = '192' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '352' y = '192' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '384' y = '192' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '416' y = '192' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '448' y = '192' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '480' y = '192' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+    </animation>
+    <!-- Walking Animation Facing Up -->
+    <animation id = 'walkingUp' edge = 'walkingBlink' replay = '1' numFrames = '8' >
+        <validEdges>
+            <edge>walkingBlinkUp</edge>
+            <edge>idleUp</edge>
+            <edge>walkingRight</edge>
+            <edge>walkingDown</edge>
+            <edge>walkingLeft</edge>
+            <edge>hitStunDown</edge>
+            <edge>hitStunUp</edge>
+            <edge>hitStunLeft</edge>
+            <edge>hitStunRight</edge>
+        </validEdges>
+        <frame length = '6'>
+            <clip x = '0' y = '224' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '32' y = '224' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '64' y = '224' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '96' y = '224' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '128' y = '224' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '160' y = '224' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '192' y = '224' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '224' y = '224' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+    </animation>
+    <!-- Blinking Walking Animation Facing Up -->
+    <animation id = 'walkingBlinkUp' edge = 'walking' replay = '1' numFrames = '8' >
+        <validEdges>
+            <edge>walkingUp</edge>
+            <edge>idleUp</edge>
+            <edge>walkingRight</edge>
+            <edge>walkingDown</edge>
+            <edge>walkingLeft</edge>
+            <edge>hitStunDown</edge>
+            <edge>hitStunUp</edge>
+            <edge>hitStunLeft</edge>
+            <edge>hitStunRight</edge>
+        </validEdges>
+        <frame length = '6'>
+            <clip x = '256' y = '224' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '288' y = '224' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '320' y = '224' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '352' y = '224' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '384' y = '224' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '416' y = '224' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '448' y = '224' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '6'>
+            <clip x = '480' y = '224' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+    </animation>
+    <!-- Damage Reaction Animation Facing Down -->
+    <animation id = 'hitStunDown' edge = 'idle' replay = '0' numFrames = '2' >
+        <validEdges>
+            <edge>idleDown</edge>
+        </validEdges>
+        <frame length = '16' >
+            <clip x = '448' y = '0' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '8' >
+            <clip x = '480' y = '0' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+    </animation>
+    <!-- Damage Reaction Animation Facing Up -->
+    <animation id = 'hitStunUp' edge = 'idle' replay = '0' numFrames = '2' >
+        <validEdges>
+            <edge>idleUp</edge>
+        </validEdges>
+        <frame length = '16' >
+            <clip x = '448' y = '0' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '8' >
+            <clip x = '480' y = '0' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+    </animation>
+    <!-- Damage Reaction Animation Facing Left -->
+    <animation id = 'hitStunLeft' edge = 'idle' replay = '0' numFrames = '2' >
+        <validEdges>
+            <edge>idleLeft</edge>
+        </validEdges>
+        <frame length = '16' >
+            <clip x = '448' y = '0' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '8' >
+            <clip x = '480' y = '0' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+    </animation>
+    <!-- Damage Reaction Animation Facing Right -->
+    <animation id = 'hitStunRight' edge = 'idle' replay = '0' numFrames = '2' >
+        <validEdges>
+            <edge>idleRight</edge>
+        </validEdges>
+        <frame length = '16' >
+            <clip x = '448' y = '0' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+        <frame length = '8' >
+            <clip x = '480' y = '0' w = '32' h = '32' />
+            <anchor x = '16' y = '16' />
+            <collision x = '7' y = '7' w = '18' h = '23' />
+        </frame>
+    </animation>
+</playerPlantSwordAnimations>
