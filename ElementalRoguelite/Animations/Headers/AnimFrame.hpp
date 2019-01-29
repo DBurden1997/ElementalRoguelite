@@ -30,6 +30,9 @@ class AnimFrame
     
     // List of all hitboxes for this frame
     std::vector<SDL_Rect> m_hitBoxes;
+    
+public:
+    AnimFrame( int rowNum, int frameNum, int length ) : m_rowNum( rowNum ), m_frameNum( frameNum ), m_frameLength( length ), m_hurtBoxes( {} ), m_hitBoxes( {} ) {}
 };
 
 #endif /* AnimFrame_hpp */
