@@ -15,18 +15,24 @@
 #include <memory>
 
 #include "Animation.hpp"
+#include "AnimFrame.hpp"
+
+typedef std::map<std::string, std::shared_ptr<Animation> > AnimationSet;
 
 class AnimationManager
 {
-    // A map of names to animations
-    std::map<std::string, std::shared_ptr<Animation> > m_animationMap;
+    // A map of names to animation sets
+    std::map<std::string, AnimationSet > m_animationMap;
     
     // Loading helper functions
-    loadHitboxes();
-    loadFrames();
-    loadDirection();
-    loadAnimation();
+    void loadColliders( std::ifstream& stream, std::vector<SDL_Rect>& colliders );
+    void loadFrame( std::ifstream& stream, std::string& direction, Animation& anim, SDL_Rect& frameBase );
+    void loadFrames( std::ifstream& stream, std::string& direction, Animation& anim, SDL_Rect& frameBase );
+    void loadDirection( std::ifstream& stream, std::string& direction, Animation& anim );
+    void loadAnimation( std::ifstream& stream, std::string& animName );
+    void loadAnimationSet( std::ifstream& stream, std::string& setName );
     
+    bool isDirection( std::string& token );
 public:
     // Constructor
     AnimationManager() {}

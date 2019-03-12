@@ -16,11 +16,8 @@
 
 class AnimFrame
 {
-    // What row in the animation the frame is in
-    unsigned int m_rowNum;
-    
-    // Frame within the row
-    unsigned int m_frameNum;
+    // The rect of the frame in the spritesheet
+    SDL_Rect m_frameRect;
     
     // Number of game frames to spend in this frame
     unsigned int m_frameLength;
@@ -32,7 +29,12 @@ class AnimFrame
     std::vector<SDL_Rect> m_hitBoxes;
     
 public:
-    AnimFrame( int rowNum, int frameNum, int length ) : m_rowNum( rowNum ), m_frameNum( frameNum ), m_frameLength( length ), m_hurtBoxes( {} ), m_hitBoxes( {} ) {}
+    AnimFrame( SDL_Rect frameRect, int length ) : m_frameRect( frameRect ), m_frameLength( length ), m_hurtBoxes( {} ), m_hitBoxes( {} ) {}
+    
+    const SDL_Rect& getRect();
+    int getLength();
+    std::vector<SDL_Rect>& getHurtBoxes();
+    std::vector<SDL_Rect>& getHitBoxes();
 };
 
 #endif /* AnimFrame_hpp */
